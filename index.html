@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Radar Cultural</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--nav. mas tenho que arrumar-->
+        <div class="header-top">
+            <h2>Radar Cultural</h2>
+            <div class="auth-buttons">
+                <span id="userDisplay"></span>
+                <a href="entrada.html" class="login-button" id="loginBtn">Login</a>
+                <a href="cadastrar.html" class="signup-button" id="signupBtn">Cadastre-se</a>
+                <a href="#" class="logout-button" id="logoutBtn" onclick="fazerLogout(); return false;">Logout</a>
+            </div>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="banner">
+            <h1> O QUE VALE O SEU TEMPO?</h1>
+                <h2><a href="recomendacoes.html">Ver recomendações</a></h2>   
+        </div>
+        
+        <div class="categorias-section">
+            <div class="categorias-buttons">
+                <button class="categoria-btn active" data-categoria="filmes">🎬 Filmes</button>
+                <button class="categoria-btn" data-categoria="series">📺 Séries</button>
+                <button class="categoria-btn" data-categoria="animes">🍥 Animes</button>
+                <button class="categoria-btn" data-categoria="jogos">🎮 Jogos</button>
+            </div>
+                <!-- usei IA com orgulho aqui, PQ SÃO 4 DA MANHÃ-->
+            <div class="categorias-content">
+                <div class="categoria-item active" data-categoria="filmes">
+                    <h3>Filmes</h3>
+                    <ul>
+                        <li>Lançamentos</li>
+                        <li>Clássicos</li>
+                        <li>Ação</li>
+                        <li>Drama</li>
+                        <li>Terror</li>
+                        <li>Comédia</li>
+                        <li>Ficção Científica</li>
+                        <li>Suspense</li>
+                        <li>Documentários</li>
+                    </ul>
+                </div>
+
+                <div class="categoria-item" data-categoria="series">
+                    <h3>Séries</h3>
+                    <ul>
+                        <li>Em alta</li>
+                        <li>Finalizadas</li>
+                        <li>Em andamento</li>
+                        <li>Curtas</li>
+                        <li>Drama</li>
+                        <li>Crime</li>
+                        <li>Fantasia</li>
+                        <li>Sitcom</li>
+                    </ul>
+                </div>
+
+                <div class="categoria-item" data-categoria="animes">
+                    <h3>Animes</h3>
+                    <ul>
+                        <li>Shounen</li>
+                        <li>Seinen</li>
+                        <li>Slice of Life</li>
+                        <li>Romance</li>
+                        <li>Ação</li>
+                        <li>Terror</li>
+                        <li>Isekai</li>
+                        <li>Clássicos</li>
+                        <li>Temporada atual</li>
+                    </ul>
+                </div>
+
+                <div class="categoria-item" data-categoria="jogos">
+                    <h3>Jogos</h3>
+                    <ul>
+                        <li>Indie</li>
+                        <li>AAA</li>
+                        <li>Multiplayer</li>
+                        <li>Singleplayer</li>
+                        <li>RPG</li>
+                        <li>FPS</li>
+                        <li>Terror</li>
+                        <li>Retro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--isso me deu dor, são CARDS-->    
+        <div class="cards-container">
+              <div class="card1">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card2">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card3">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card4">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card5">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card6">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card7">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card8">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card9">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+              <div class="card10">
+                <div class="card-image"></div>
+                <div class="card-details">
+                    <p class="text-card">Título do Filme</p>
+                    <p class="text-body">Descrição do filme vai aqui com uma breve sinopse.</p>
+                    <button class="card-button">Ver mais</button>
+                </div>
+            </div>
+        </div>
+      <section class="about-header">
+        <h2>Sobre o Radar Cultural</h2>
+        <p>O Radar Cultural é uma plataforma dedicada a fornecer recomendações de filmes, séries, animes e jogos para os entusiastas da cultura pop. 
+            Nosso objetivo é ajudar você a descobrir novas obras que valem o seu tempo.</p>
+      </section>
+      <section class="about-section">
+       
+        <div class="post">
+            <div class="post-image"></div>
+            <div class="post-right">
+                <h3>Jogos</h3>
+                <p>Explore nossa seleção de jogos recomendados, desde títulos indie até grandes lançamentos.</p>
+            </div>
+        </div>  
+         <div class="post">
+            <div class="post-image"></div>
+            <div class="post-center">
+                <h3>Nossa Missão</h3>
+                <p>Nossa missão é conectar você com conteúdos culturais de qualidade, oferecendo análises detalhadas e sugestões personalizadas.</p>
+            </div>
+        </div>    
+        <div class="post">
+            <div class="post-image"></div>
+            <div class="post-left">
+                <h3>Confira</h3>
+                <p>Confira nossas recomendações e descobra suas próximas favoritas!</p>
+            </div>
+        </div>   
+       </section>
+       <section class="footer">
+        <p>Contato: contato@radarcultural.com</p>
+        <a link href="https://www.facebook.com/radarcultural" target="_blank">Facebook</a> |
+        <a link href="https://www.twitter.com/radarcultural" target="_blank">Twitter</a> |
+        <a link href="https://www.instagram.com/radarcultural" target="_blank">Instagram</a> |
+        <a href="index.html">Início</a>
+        <p>&copy; 2024 Radar Cultural. Todos os direitos reservados.</p>
+       </section>
+    </main>
+    <script src="auth.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
